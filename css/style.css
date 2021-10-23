@@ -3,6 +3,7 @@
 :root {
   --color-one: #f3603b;
   --color-two: #232c50;
+  --color-three: #b3b2b7;
 }
 
 * {
@@ -11,12 +12,10 @@
   box-sizing: border-box;
 }
 
-.header {
+
+.header{
+  width: 100%;
   height: 200px;
-  background-color: white;
-}
-.header__ul {
-  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -25,6 +24,10 @@
   align-items: center;
   list-style: none;
   gap: 90px;
+  border: 3px solid blue;
+}
+.header__logo{
+  border: 3px solid red;
 }
 
 .header__list {
@@ -37,8 +40,9 @@
   align-items: center;
   list-style: none;
   gap: 30px;
+  border: 3px solid green;
 }
-.header__text {
+.header__list__text {
   text-decoration: none;
   color: black;
   font-family: "Be Vietnam", sans-serif;
@@ -46,11 +50,11 @@
   font-size: 13px;
 }
 
-.header__text:hover {
+.header__list__text:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.header__button {
+.header__list__button {
   width: 134px;
   height: 44px;
   border-radius: 20px;
@@ -60,84 +64,122 @@
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-.header__button:hover {
+.header__list__button:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 .main {
 }
-.main__section {
+
+.main__section1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   align-items: center;
+  border: 3px solid red;
+  width: 100%;
+  height: 550px;
 }
-.class__article {
+.class__section1__left {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border: 2px solid blue;
 }
 
-.main__title {
-  width: 600px;
+.class__section1__left__title {
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 58px;
   line-height: 60px;
+  width: 500px;
 }
 
-.main__sentence {
-  width: 360px;
+.class__section1__left__sentence {
   color: black;
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   font-size: 17px;
+  width: 380px;
+
 }
 
-.main__image {
-  width: 400px;
+.class__section1__left__image {
+  border: 3px solid black;
+
+  width: 500px;
 }
 
-.main__subtitle {
+.main__section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: top;
+  border: 3px solid red;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+
+.class__section2__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  gap: 30px;
+  border: 2px solid blue;
+  width: 500px;
+}
+
+.main__section2__left__subtitle {
   width: 500px;
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 60px;
-}
-.main__section2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  align-items: top;
-  gap: 20px;
+  line-height: 40px;
 }
 
-.main__section2__list {
-}
-
-.main__section2__item {
-  width: 500px;
+.main__section2__left__sentence {
   color: black;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  width: 350px;
+  border: 1px solid red;
+}
+.main__section2__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  gap: 10px;
+  width: 500px;
+  border: 3px solid black;
+}
+
+.main__section2__list_item h2 {
+  width: 500px;
+  color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 70px;
+  line-height: 60px;
 }
 
-.main__Section2__sentence p {
-  width: 440px;
-  color: #b3b2b7;
+.main__section2__list_item p {
+  width: 430px;
+  color: var(--color-three);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  margin-left: 85px;
+  line-height: 25px;
 }
+
+/*
 ol {
   counter-reset: item;
 }
