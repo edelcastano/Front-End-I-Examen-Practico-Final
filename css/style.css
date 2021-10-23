@@ -64,11 +64,12 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
+.main {
+}
 .main__section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
 }
@@ -110,7 +111,7 @@
 .main__section2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   align-items: top;
   gap: 20px;
@@ -125,7 +126,7 @@
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 .main__Section2__sentence p {
@@ -135,4 +136,21 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  margin-left: 85px;
+}
+ol {
+  counter-reset: item;
+}
+ol li {
+  font-size: 16px;
+  list-style: none;
+}
+ol li:before {
+  content: "0" counter(item);
+  counter-increment: item;
+  background-color: var(--color-one);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  height: 25px;
 }
