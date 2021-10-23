@@ -65,3 +65,35 @@
       text-decoration: underline;
       cursor: pointer;
   }
+
+  .main__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .class__article{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .main__title{
+    width: 600px;
+    color:var(--color-two);
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 60px;
+  }
+
+.main__sentence{
+    width: 360px;
+    color:black;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 500;
+    font-size:17px;
+}
+
+
