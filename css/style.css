@@ -243,7 +243,7 @@ ol li:before {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 250px;
+  height: 150px;
 }
 
 .main__halft__title{
@@ -393,9 +393,13 @@ ol li:before {
   height: 150px;
 }
 
-.footer__two__header__logo{
-  color: white;
-  
+.logo{
+  fill:white;
+}
+
+.logo:hover{
+  fill:var(--color-one);
+
 }
 
 .footer__two__header__red{
@@ -446,9 +450,14 @@ ol li:before {
   font-size: 13px;
 }
 
+.footer__two__header__red__logo:hover{
+  color: var(--color-one);
+}
+
 .footer__two__list__item:hover {
   text-decoration: underline;
   cursor: pointer;
+  color:var(--color-one)
 }
 
 .footer__two__form{
