@@ -504,4 +504,90 @@ ol li:before {
 }
 
 
+/*
+
+#btn-menu{
+  display: none;
+}
+
+header label{
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.menu ul {
+  margin:0;
+  listi-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li{
+  border-right: 1px solid #fff;
+
+}
+.menu li:hover{
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 450) {
+  header label{
+    display: block;
+  }
+
+  .menu{
+    position: absolute;
+    background: red;
+    width: 100px;
+    margin-right: -70%;
+  }
+
+  .menu ul{
+    flex-direction: column;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin:0px;
+  }
+}
+*/
+
+@media (max-width:400px){
+  
+.header__menu{
+  position: absolute;
+  right: 5%;
+}
+
+.header__list__button{
+  display: none;
+}
+.header__list{
+  flex-direction:column;
+  gap: 10px;
+  position: absolute;
+  right: 0%;
+  top: 70%;
+  margin-top: -100%;
+}
+#btn-menu:checked ~ .header__list{
+  margin-top: 0%;
+
+}
+}
+
 
