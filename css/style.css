@@ -17,7 +17,7 @@
   background: var(--color-one);
 }
 
-.body{
+.body {
   border: solid 1px black;
 }
 
@@ -49,7 +49,7 @@
   gap: 30px;
   border: 1px red solid;
 }
-.header__list a{
+.header__list a {
   text-decoration: none;
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
@@ -63,7 +63,7 @@
   color: var(--color-two);
   opacity: 50%;
 }
-.header__link button{
+.header__link button {
   width: 134px;
   height: 44px;
   border-radius: 20px;
@@ -84,10 +84,8 @@
   background-color: var(--color-two);
 }
 
-
-.header__menu i{
-  font-size: 50px;
-
+.header__menu i {
+  font-size: 30px;
 }
 .header__menu i:hover {
   background: rgba(0, 0, 0, 0.25);
@@ -95,9 +93,7 @@
   color: var(--color-two);
 }
 
-
-
-.main__section1{
+.main__section1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -106,22 +102,32 @@
   width: 100%;
   border: solid 1px black;
 }
-.main__section1__left {
+.main__section1__left div {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   gap: 20px;
-  width: 100%;
+  width: 80%;
   border: solid 1px black;
 }
+.main__section1__left {
+  width: 100%;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  border: 3px red solid;
+}
 
-.main__section1__left h1{
+.main__section1__left h1 {
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 58px;
   line-height: 60px;
-  width: 100%;
+  width: 85%;
+  border: 3px black solid;
 }
 
 .main__section1__left p {
@@ -129,10 +135,10 @@
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   font-size: 17px;
-  width: 80%;
+  width: 65%;
 }
 
-.main__section1__left button{
+.main__section1__left button {
   width: 134px;
   height: 44px;
   border-radius: 20px;
@@ -153,11 +159,16 @@
   background-color: var(--color-two);
 }
 
-.main__section1 img{
-  width: 90%;
-  border: solid 1px black;
+.main__section1__right {
+  width: 100%;
+  border: solid 10px black;
 }
-/*
+
+.main__section1__right img {
+  width: 100%;
+  border: solid 10px green;
+}
+
 .main__section2 {
   display: flex;
   flex-direction: row;
@@ -165,65 +176,75 @@
   align-content: center;
   align-items: top;
   width: 100%;
-  height: 500px;
-  position: relative;
+  border: 3px pink solid;
 }
 
-.class__section2__left {
+.main__section2__left {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-content: center;
+  align-items: center;
   gap: 30px;
-  width: 500px;
-  position: absolute;
-  left: 13%;
+  width: 100%;
+  border: 3px red solid;
+}
+.main__section2__left div {
+  width: 80%;
+  border: 3px green solid;
 }
 
-.main__section2__left__subtitle {
-  width: 500px;
+.main__section2__left h1 {
+  width: 100%;
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
+  border: 3px black solid;
 }
 
-.main__section2__left__sentence {
+.main__section2__left p {
+  width: 80%;
   color: var(--color-three);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   font-size: 17px;
-  width: 350px;
+  border: 3px black solid;
 }
-.main__section2__list {
+.main__section2__right {
+  width: 100%;
+  border: 3px black solid;
+}
+.main__section2__right ol {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-content: center;
   gap: 10px;
-  width: 550px;
-  position: absolute;
-  right: 6%;
+  width: 100%;
+  border: blue 4px solid;
 }
 
-.main__section2__list_item {
-  width: 500px;
+.main__section2__right li {
+  width: 100%;
   color: var(--color-two);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 60px;
+  border: black 4px solid;
 }
 
-.main__section2__list_item p {
-  width: 430px;
+.main__section2__right p {
+  width: 60%;
   color: var(--color-three);
   font-family: "Be Vietnam", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
   margin-left: 104px;
+  border: green 4px solid;
 }
 
 ol {
@@ -243,6 +264,8 @@ ol li:before {
   height: 25px;
   margin-right: 20px;
 }
+
+/*
 
 .main_half {
   display: flex;
@@ -533,79 +556,159 @@ ol li:before {
 */
 
 @media (min-width: 769px) {
-  body{
+  body {
     background-color: rgba(255, 255, 0, 0.63);
   }
 
-  .header__menu i{
+  .header__menu i {
     display: none;
   }
-
-
 }
-
 
 @media (max-width: 768px) {
-  body{
-    background-color:rgba(231, 19, 19, 0.959);
+  body {
+    background-color: rgba(231, 19, 19, 0.959);
   }
-  .header__list{
+  .header__list {
     display: none;
   }
-  .header__link button{
+  .header__link button {
     display: none;
   }
 
-  .main__section1{
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-left: 5%;
+  }
+
+  .header__menu {
+    margin-right: 5%;
+  }
+
+  .main__section1 {
     flex-direction: column-reverse;
 
     text-align: center;
   }
-  .main__section1__left{
-    align-items: center;
-  }
-  .main__section1__left h1{
-    text-align: center;
-    font-size: 50px;
-  }
-  .main__section1__left p{
-    text-align: center;
-  }
-  
-
-}
-
-
-@media (max-width: 460px) {
-  body{
-    background-color: rgba(91, 165, 88, 0.322);
-  }
-  .header__list{
-    display: none;
-  }
-
-  .header__link button{
-    display: none;
-  }
-
-  .main__section1{
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  .main__section1__left{
+  .main__section1__left {
     align-items: center;
     width: 100%;
   }
-  .main__section1__left h1{
-    text-align: center;
-    font-size: 40px;
-
+  .main__section1__left div {
+    width: 90%;
+    align-items: center;
   }
-  .main__section1__left p{
+  .main__section1__left h1 {
     text-align: center;
+    font-size: 50px;
+    width: 100%;
+  }
+  .main__section1__left p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .main__section1__right {
+    width: 100%;
+    border: solid 10px red;
+  }
+
+  .main__section1__right img {
+    width: 90%;
+    border: solid 3px green;
+  }
+  .main__section2 {
+    flex-direction: column;
+  }
+
+  .main__section2__left div {
+    text-align: center;
+    width: 90%;
+  }
+  .main__section2__left p {
+    width: 100%;
+  }
+  .main__section2__right {
+    width: 94%;
+    margin-left: 3%;
+  }
+  .main__section2__right p {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
+@media (max-width: 460px) {
+  body {
+    background-color: rgba(91, 165, 88, 0.322);
+  }
+  .header__list {
+    display: none;
+  }
 
+  .header__link button {
+    display: none;
+  }
 
+  .header {
+    justify-content: space-between;
+  }
 
+  .header__logo {
+    margin-left: 5%;
+  }
+
+  .header__menu {
+    margin-right: 5%;
+  }
+
+  .main__section1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .main__section1__left {
+    align-items: center;
+    width: 100%;
+  }
+  .main__section1__left div {
+    width: 90%;
+    align-items: center;
+  }
+
+  .main__section1__left p {
+    text-align: center;
+    width: 100%;
+  }
+  .main__section1__right {
+    width: 100%;
+    border: solid 10px red;
+  }
+
+  .main__section1__right img {
+    width: 90%;
+    border: solid 3px green;
+  }
+
+  .main__section2 {
+    flex-direction: column;
+  }
+
+  .main__section2__left div {
+    text-align: center;
+    width: 90%;
+  }
+  .main__section2__left p {
+    width: 100%;
+  }
+  .main__section2__right {
+    width: 94%;
+    margin-left: 3%;
+  }
+  .main__section2__right p {
+    margin-left: 0;
+    width: 100%;
+  }
+}
